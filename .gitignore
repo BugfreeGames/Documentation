@@ -1,4 +1,5 @@
+.DS_Store
 *.aux
 *.log
-*.gz
-*.DS_Store
+*.synctex.gz
+Phase-1/requirements-table.pdf

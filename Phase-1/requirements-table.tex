@@ -1,0 +1,119 @@
+\documentclass{article}
+\usepackage{geometry}
+\geometry{a4paper, left=0.5in, right=0.5in, top=1in, bottom=1in}
+
+\usepackage{enumitem}
+\usepackage{pdflscape}
+\usepackage{longtable}
+
+\begin{document}
+	\begin{landscape}
+	\begin{longtable}{|l||l|p{4cm}|p{8cm}|p{7cm}|}
+		\hline
+		\# & Title & Story & Functional & Non-functional \\ \hline \hline \endhead
+		1 & GUI & As a player I must be able to see a GUI consisting of a map subdivided into plots and should be able to gain information about the state of my freehold and my individual plots.
+		& \begin{enumerate}[label=1.1.\arabic*.]
+			\item The entire map should be available to the user
+			\item Information about individual plots should be shown:
+			\begin{enumerate}
+				\item Which player owns a plot
+				\item Output of ore, energy, and food
+				\item Robiticons installed
+			\end{enumerate}
+		\end{enumerate}
+		& \begin{enumerate}[label=1.2.\arabic*.]
+			\item The map must represent the university of York with at least 3 identifiable landmarks
+			\item The map must be split into multiple evenly sized plots
+			\item Each player must be uniquely identifiable on the map
+		\end{enumerate} \\ \hline
+	
+	2 & Purchasing Land
+	& As a player I must be able to purchase plots of land to increase the size and productivity of my freehold
+	& \begin{enumerate}[label=2.1.\arabic*.]
+		\item The player must be able to exchange currency for more land during the acquisition phase of the round
+	\end{enumerate}
+	& \begin{enumerate}[label=2.2.\arabic*.]
+		\item Plots will have different strengths and weaknesses in terms of production based on location and terrain type
+		\item These values can change when random events occur
+		\item All plots are unallocated at the start of the game
+	\end{enumerate} \\ \hline
+
+	3 & Plot Modification
+	& As a player, I must be able to buy and sell various modifications to my plots to increase productivity and/or style.
+	& \begin{enumerate}[label=3.1.\arabic*.]
+		\item The system must provide a number of possible modifications to plots
+	\end{enumerate} & \\ \hline
+
+	4 & Multiplayer
+	& As a player, I must be able to buy and sell various modifications to my plots to increase productivity and/or style.
+	& \begin{enumerate}[label=4.1.\arabic*.]
+		\item A player must be able to chose whether to play against another human or the computer
+		\item At least two users must be able to play the game together
+		\item The players will take turns in playing
+	\end{enumerate} & \\ \hline
+
+	5 & Round Structure
+	& As a player I must be able to play the game in a structured manner
+	& \begin{enumerate}[label=5.1.\arabic*.]
+		\item The game must be split into multiple rounds
+		\item Each round should be made of 5 phases:
+		\begin{enumerate}[label=\arabic*.]
+			\item Purchase any unoccupied plots
+			\item Purchase and customise roboticons
+			\item Install roboticons on plots of land
+			\item The colony produces resources
+			\item The player can buy and sell resources
+		\end{enumerate}
+		\item Phases 2 \& 3 must be time limited. 
+	\end{enumerate} & \\ \hline
+
+	6 & Roboticons
+	& As a player I must be able to purchase and customise my roboticons so they can produce more of certain amounts of resources
+	& \begin{enumerate}[label=6.1.\arabic*.]
+		\item The player must be able to purchase roboticons from the market
+		\item The market must have ore to produce roboticons
+		\item The user must be able to purchase modifications for the robiticon at the market
+		\item The user must be able to install modifications on roboticons 
+		\item The user must have the option to install a roboticon on a plot of land they own.
+	\end{enumerate}
+	& \begin{enumerate}[label=6.2.\arabic*.]
+		\item At the start of the game, the market has 12 roboticons
+	\end{enumerate} \\ \hline
+
+	7 & Resources
+	& As a player I must be able to produce resources from my plots
+	& \begin{enumerate}[label=7.1.\arabic*.]
+		\item Roboticons are required to produce resources
+		\item During phase 4 the user’s roboticons will generate resources across the freehold
+		\item Food, energy and ore will be generated
+		\item Different amount of resources will affect the rate of production
+	\end{enumerate} & \\ \hline
+
+	8 & Buying/selling resources
+	& As a player, I must be able to buy and sell resources to other players through an auction, or to the market at a fixed price so that I can maximise my wealth and productivity.
+	& \begin{enumerate}[label=8.1.\arabic*.]
+		\item The system must provide an auction facility, where the other player and the market bid for resources
+		\item The system must choose a market price based on resource abundance
+		\item The player must be able to buy/sell resources from/to other players, or the market
+	\end{enumerate}
+	& \begin{enumerate}[label=8.2.\arabic*.]
+		\item At the start of the game, the market must have 16 units of food and energy and 0 units of ore
+		\item At the start of the game, the player must have a small amount of money
+	\end{enumerate} \\ \hline
+
+	9 & Gambling
+	& As a player, I must be able to enter the bar and either win or lose money.
+	& \begin{enumerate}[label=9.1.\arabic*.]
+		\item The system must provide a minigame where the player can gamble with their money
+	\end{enumerate} & \\ \hline
+
+	10 & Winning
+	& As a player, I must be able to win or lose the game.
+	& \begin{enumerate}[label=10.1.\arabic*.]
+		\item The system must assign a value to each resource at the end of the game, from which a player's final wealth is calculated
+		\item The game must end on the round in which the last plot of land has been allocated.
+		\item The player with the highest final wealth must be declared the winner, and Vice-Chancellor of the colony
+	\end{enumerate} & \\ \hline
+	\end{longtable}
+	\end{landscape}
+\end{document}

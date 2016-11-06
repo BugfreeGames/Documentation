@@ -2,4 +2,5 @@
 *.aux
 *.log
 *.synctex.gz
+*.toc
 Phase-1/requirements-table.pdf

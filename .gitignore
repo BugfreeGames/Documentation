@@ -3,4 +3,6 @@
 *.log
 *.synctex.gz
 *.toc
+*.bbl
+*.blg
 Phase-1/requirements-table.pdf

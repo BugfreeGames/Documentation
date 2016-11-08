@@ -1,7 +1,43 @@
 \chapter{Requirements}
 \section{Background}
+\subsection{Elicitation and Negotiation}
+Requirements are fundamental to the software engineering process.
+In order for us to deliver a piece of software which is as close to our customer’s vision as possible, we needed to begin the requirement engineering process, starting with elicitation.
+We first analysed the brief as a team, and made a note of all the requirements which were clearly stated.
+We also highlighted parts of the brief which we thought were ambiguous and needed further input from the customer to ascertain what they required more precisely.
+We took these points to an interview with the customer to gain further insight into what they required.
+At the interview, the customer told us that we could decide what we thought was best for some of the details, such as the exact features of the map, and the amount of customisation that can be applied to a plot.
+We looked at all of these as a team and decided on an initial plan of what these should be.
+
+We compiled all of this into the first draft of our requirements, with a section for those things which would be nice to have, but were not essential according to the brief.
+This means that if we need to revisit our requirements during development because otherwise we would not be able to complete the project on time, we know which requirements can be changed or toned down to allow for this.
+
+We took this first draft of the requirements back to the customer, and together we went through them all to ensure that we were agreed on what the requirements were.
+
+
+\subsection{Presentation}
+We will be using user stories, as detailed in Sommerville~\cite{sommerville2016software}, these stories will detail the needs of the user for specific features and aspects of the system.
+We are using user stories as they are part of the agile development process and easily allow for us to iteratively adapt to change.
+This is useful the requirements themselves change or if we realise we need to update them due to contradictions.
+The user stories will also include acceptability criteria, this means that we will be easily laid out everything the system needs to be able to do.
+This will also feed into the test driven development we will be using later in the project as we able to see if a requirement has been fully implemented.
+We will not be using use cases as they are part of none agile development methods and more suited to transactional processes and are therefore inappropriate for this project. 
+
+We will then tabulate our requirements to make them more accessible to us and to the customer.
+In the table we will have the number and name of the user story to allow us to easily reference them.
+We will then have the user story itself.
+Finally, we will have the acceptance criteria split up into functional and non-functional requirements.
+When referencing requirements they will be referred to by a series of 3 numbers separated by points.
+The first number will represent the position of the user story associated with the requirement in the requirements table.
+The next number will show if the requirement is functional, represented by a 1, or non-functional, represented by a  2.
+The final number will represent the position of the requirement in it’s cell in the table.
+We chose to tabulate our requirements after initially presenting our requirements to the customer as a user story followed by a list [reference to appendix] but changed them as he said it would be easier for both himself and us to read and reference.
+
 
 % \section{User Stories} (in requirements-table.tex)
 \newgeometry{left=0.75in, right=0.75in, top=1in, bottom=1in}
 \input{requirements-table.tex}
 \restoregeometry
+
+\bibliographystyle{ieeetr}
+\bibliography{references.bib}

@@ -11,17 +11,29 @@
 \usepackage{pdflscape}
 \usepackage{longtable}
 \usepackage{chapterbib}
+\usepackage{fancyhdr}
+
+\pagestyle{fancyplain}
 
 \renewcommand{\chaptername}{Section}
 
-%SetFonts
-
-%SetFonts
-
-
 \title{Phase 1}
 \author{Team Fractal}
-\date{}							% Activate to display a given date or no date
+\date{}	
+
+\makeatletter
+\let\Author\@author
+
+\fancyhf{}
+\fancyhead[R]{\Author}
+\fancyhead[L]{\leftmark}
+
+%SetFonts
+
+%SetFonts
+
+
+						% Activate to display a given date or no date
 
 \begin{document}
 \maketitle

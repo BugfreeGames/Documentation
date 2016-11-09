@@ -17,11 +17,17 @@ To combine these two factors into something meaningful we will use a risk matrix
 This will allow us to find a balance and identify the risks that will pose major problems.
 
 \begin{figure}[h]
-	\begin{centering}
-		\includegraphics{risktable.pdf}
-		\caption{Table showing how likelihood and severity of a risk combine to show overall impact of the risk}
-		\label{fig:risktable}
-	\end{centering}
+	\centering
+	\begin{tabular}{|l|l||l|l|l|}
+		\hline
+		\multicolumn{2}{|l||}{\multirow{2}{*}{}} & \multicolumn{3}{c|}{Likelihood} \\ \cline{3-5}
+		\multicolumn{2}{|l||}{}                  & Low       & Medium   & High     \\ \hhline{|==||=|=|=|}
+		\multirow{3}{*}{Severity}    & Low      & Low       & Low      & Medium   \\ \cline{2-5}
+		& Medium   & Low       & Medium   & High     \\ \cline{2-5}
+		& High     & Medium    & High     & High     \\ \hline
+	\end{tabular}
+	\caption{Table showing how likelihood and severity of a risk combine to show overall impact of the risk}
+	\label{fig:risktable}
 \end{figure}
 
 Green cells in the matrix are considered to be overall low risk, this is because they are not particularly likely to happen and if they do they will not have be severe enough to majorly impact the project.

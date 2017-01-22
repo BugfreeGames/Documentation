@@ -1,36 +1,26 @@
 \newcommand{\low}{\cellcolor{green}Low}
 \newcommand{\medium}{\cellcolor{orange}Medium}
 \newcommand{\high}{\cellcolor{red}High}
-\begin{longtable}{|l|p{5cm}|l|l|l|p{4cm}|p{5cm}|}
+\begin{longtable}{|l|p{2cm}|p{3cm}|l|l|l|p{4cm}|p{4cm}|p{3cm}|}
 	\hline
-	\textbf{Category} & \textbf{Name} & \textbf{Severity} & \textbf{Likelihood} & \textbf{Overall} & \textbf{Mitigation} & \textbf{Contingency} \\ \hline \hline
+	\textbf{ID} & \textbf{Category} & \textbf{Name} & \textbf{Severity} & \textbf{Likelihood} & \textbf{Overall} & \textbf{Mitigation} & \textbf{Contingency} & \textbf{Risk Ownership} \\ \hline \hline
 	\endhead
-	Staff & Team member leaves & High & Low & \medium & & \\ \hline
-	Staff & Staff sick or unable to attend meetings. & Medium & High & \high & Let other members of the team know as soon as possible & Other staff takes over their work temporarily. \\ \hline
-	Staff & Don’t have the skill required to complete the task. & Low & Medium & \low & Research the skills needed. Ask other team members if they know how to help. & Read books and the internet about required skills. \\ \hline
-	Staff & Staff don’t listen others opinion& Low & Low & \low & More communication, consult Richard/Fiona if the problem continues. & Stay together and work out the root reason, then resolve it. \\ \hline
-	
-	Staff/Requirements & Staff failed to complete the task before deadline. & High & Low & \medium & More rapid sprint to ensure everyone is on track. & Cut our optional features and complete the compulsory requirements first. \\ \hline
-	
-	Requirements & Change of requirements & Low & High & \medium & Keep in touch, build and show to the client & Update the requirement document and update the product. \\ \hline
-	Requirements & Responsible of telling the customer that requirements were impossible and offer alternative options. & Low & Low & \low & Negotiate with the customer before updating the requirements. & Explain to the customer what has to be changed. \\ \hline
-	Requirements & Cannot meet the requirement & High & Low & \medium & Design realistic requirements before start coding. & Modify the requirements so it can be met. \\ \hline
-	
-	Tech & Data lost - e.g. hard drive failure. & Medium & Low & \low & Backup data regularly to cloud or different devices. & Restore most recent backed up data. \\ \hline
-	Tech & IT facility failure & Low & Low & \low & Routine maintenance to devices. & Use campus computer to continue development. \\ \hline
-	Tech & Security threats & High & Low & \medium &  Install antivirus software and enable firewall. & Seek IT support for help and continue working. \\ \hline
-	Tech & Software bug that causes data loss. & High & Medium & \high & Backup data before executing dangerous commands. & Reset to the previous commit using git. \\ \hline
-	
-	Tools & Tools not available & Low & Medium & \low & Research background information about alternatives before proceeding. & Switch to an alternative tool, request help from IT support or create one if enough time before deadline. \\ \hline
-	Tools & Unfamiliar with the toolset. & Low & Medium & \low & Learn how to use the tool. & Ask IT support or other teammates for help. \\ \hline
-	Tools & Tools does not fit into the project after start off. & Low & Medium & \low & Do extensive research and comparison before integrating to the workflow. & Find alternative and re-evaluate options. \\ \hline
-	
-	Estimation & Estimates that there will not be enough time to finish the whole project. & High & Medium & \high & Allocate and plan the time efficiently. & Plan and spend more time for the project. \\ \hline
-	
-	Customer & Customer changes the requirements. & Low & High & \medium & Keep in touch and understand the necessary changes as soon as possible. & Examine new requirements and update them accordingly. \\ \hline
-	Customer & Customer doesn't allow or understand why we have to change the requirements. & Medium & Medium & \medium & Keep in touch with the customer & Sit next with the customer and talk through the reason why. \\ \hline
-	
-	Test & Bugs discovered & Medium & High & \high & Understand the code and have comments around them. & Fix bugs. \\ \hline
-	Test & Something wrong but cannot find the errors. & Medium & Medium & \medium & Put comment around the code to describe, and do tests. & Debug the problem using a debugger and seek for help. \\ \hline
+	1 & Tech & Data lost - E.g. hard drive failure. & Medium & Low & \low & Backup data regularly to cloud or different devices. & Restore most recent backed up data. & Technician \\ \hline
+	2 & Staff & Staff not listening to other team members & Low & Low & \low & More communication, consult Richard/Fiona if the problem continues. & Stay together and work out the root reason, then resolve it. & Team Leader \\ \hline
+	3 & Tools & Tools not available & Low & Medium & \low & Research background information about alternatives before proceed. & Switch to an alternative tool, request help from IT support or create one if enough time before deadline. & Technician \\ \hline
+	4 & Tools & Unfamiliar with the toolset. & Low & Medium & \low & Learn how to use the tool. & Ask IT support or other teammates for help. & Team member affected \\ \hline
+	5 & Tools & Tools become less useful as the project progresses. & Low & Medium & \low & Do extensive research and comparison before integrating to the workflow. & Find alternative and re-evaluate options. & Technician \\ \hline
+	6 & Requirements & The requirements cannot be implemented & Low & Low & \low & Negotiate with the customer before updating the requirements. & Explain to the customer what has to be changed and offer alternatives. & Customer Interface \\ \hline
+	7 & Staff & Team member leaves & High & Low & \medium & - &  &  \\ \hline
+	8 & Requirements & Change of requirements. & Low & High & \medium & Keep in touch, build and show to the client. & Update the requirement document and update the product. & Customer Interface \\ \hline
+	9 & Staff / Requirements & Staff fail to complete the task before a deadline. & High & Low & \medium & More rapid sprint to ensure everyone is on track. & Cut our optional features and complete the compulsory requirements first. & Team Leader \\ \hline
+	10 & Tech & Security Threats & High & Low & \medium & Install antivirus software and enable firewall. & Seek IT support for help and continue working. & Technician \\ \hline
+	11 & Customer risks & Customer changes the requirements. & Low & High & \medium & Keep in touch and understand the necessary changes as soon as possible. & Examine new requirements and update them accordingly. & Customer Interface \\ \hline
+	12 & Customer risks & Customer doesn\&rsquo;t allow or understand why we have to change the requirements. & Medium & Medium & \medium & Keep in touch with the customer. & Sit next with the customer and talk through the reason why. & Customer Interface \\ \hline
+	13 & Customer risks & Customer decides to cancel the project. & High & Low & \medium & Keep in touch with the customer while developing the project. & - & Team Leader \\ \hline
+	14 & Test risks & Staff unable to find a bug & Medium & Medium & \medium & Put comment around the code to describe, and do tests. & Debug the problem using a debugger and seek for help. & Technician \\ \hline
+	15 & Staff & Staff sick or unable to attend meetings. & Medium & High & \high & Let other members of the team know as soon as possible & Other staff takes over their work temporarily. & Team Leader \\ \hline
+	16 & Estimation & Estimation that there will not be enough time to finish the whole project. & High & Medium & \high & Allocate and plan the time efficiently. & Plan and spend more time for the project. & Team Leader \\ \hline
+	17 & Test risks & Bugs discovered & Medium & High & \high & Understand the code and have comments around them. & Fix bugs. & Technician \\ \hline
 	
 \end{longtable}

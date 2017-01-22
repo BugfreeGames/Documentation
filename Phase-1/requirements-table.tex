@@ -17,6 +17,8 @@
 			\item The map must represent the university of York with at least 3 identifiable landmarks
 			\item The map must be split into multiple evenly sized plots
 			\item Each player must be uniquely identifiable on the map
+			\item The player must be able to access the whole map
+			\item The GUI should load in less than 5 seconds
 		\end{enumerate} \\ \hline
 	
 	2 & Purchasing Land
@@ -26,15 +28,18 @@
 	\end{enumerate}
 	& \begin{enumerate}[label=2.2.\arabic*.]
 		\item Plots will have different strengths and weaknesses in terms of production based on location and terrain type
-		\item These values can change when random events occur
-		\item All plots are unallocated at the start of the game
+		\item The player must be able to cancel a purchase to avoid accidental purchases
 	\end{enumerate} \\ \hline
 
 	3 & Plot Modification
 	& As a player, I must be able to buy and sell various modifications to my plots to increase productivity and/or style.
 	& \begin{enumerate}[label=3.1.\arabic*.]
 		\item The system must provide a number of possible modifications to plots
-	\end{enumerate} & \\ \hline
+	\end{enumerate}
+	& \begin{enumerate}[label=3.2.\arabic*.]
+		\item The player must be able to view all modifications and choose one to install
+		\item Installation must take less than a second
+	\end{enumerate} \\ \hline
 
 	4 & Multiplayer
 	& As a player, I must be able to buy and sell various modifications to my plots to increase productivity and/or style.
@@ -42,7 +47,10 @@
 		\item A player must be able to chose whether to play against another human or the computer
 		\item At least two users must be able to play the game together
 		\item The players will take turns in playing
-	\end{enumerate} & \\ \hline
+	\end{enumerate}
+	& \begin{enumerate}[label=4.2.\arabic*.]
+		\item The simulated player should take no longer than 20 seconds to complete a round
+	\end{enumerate} \\ \hline
 
 	5 & Round Structure
 	& As a player I must be able to play the game in a structured manner
@@ -57,7 +65,11 @@
 			\item The player can buy and sell resources
 		\end{enumerate}
 		\item Phases 2 \& 3 must be time limited. 
-	\end{enumerate} & \\ \hline
+	\end{enumerate}
+	& \begin{enumerate}[label=5.2.\arabic*.]
+		\item It must be easy for the player to move between phases
+		\item Changes between phases must take no longer than 5 seconds
+	\end{enumerate} \\ \hline
 
 	6 & Roboticons
 	& As a player I must be able to purchase and customise my roboticons so they can produce more of certain amounts of resources
@@ -70,6 +82,7 @@
 	\end{enumerate}
 	& \begin{enumerate}[label=6.2.\arabic*.]
 		\item At the start of the game, the market has 12 roboticons
+		\item The user should be able to tell how a roboticon they are installing will affect the plot it is installed on
 	\end{enumerate} \\ \hline
 
 	7 & Resources
@@ -79,7 +92,11 @@
 		\item During phase 4 the user’s roboticons will generate resources across the freehold
 		\item Food, energy and ore will be generated
 		\item Different amount of resources will affect the rate of production
-	\end{enumerate} & \\ \hline
+	\end{enumerate}
+	& \begin{enumerate}[label=7.2.\arabic*.]
+		\item The resource production should not take more than 5 seconds
+		\item The resource production should happen automatically
+	\end{enumerate} \\ \hline
 
 	8 & Buying/selling resources
 	& As a player, I must be able to buy and sell resources to other players through an auction, or to the market at a fixed price so that I can maximise my wealth and productivity.
@@ -97,7 +114,10 @@
 	& As a player, I must be able to enter the bar and either win or lose money.
 	& \begin{enumerate}[label=9.1.\arabic*.]
 		\item The system must provide a minigame where the player can gamble with their money
-	\end{enumerate} & \\ \hline
+	\end{enumerate}
+	& \begin{enumerate}[label=9.2.\arabic*.]
+		\item The minigame must give feedback on the money won or lost
+	\end{enumerate} \\ \hline
 
 	10 & Winning
 	& As a player, I must be able to win or lose the game.
@@ -107,4 +127,5 @@
 		\item The player with the highest final wealth must be declared the winner, and Vice-Chancellor of the colony
 	\end{enumerate} & \\ \hline
 	\end{longtable}
+The main risks associated with these requirements are risks 3, 4, 5 \& 6 as certain requirements may not be able to be implemented due to available tools or staff ability, however risks 8 and 11 must also be considered as they may change the requirements themselves.
 \end{landscape}
